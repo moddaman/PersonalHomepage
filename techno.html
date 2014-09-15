@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>home</title>
+  <meta name="description" content="Personal homepage">
+  <meta name="author" content="Morten Holst Ovrebo">
+  <link rel="stylesheet" href="stylesheet.css?v=1.0">
+  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="Images/favicon-16x16.png" sizes="16x16" />
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+</style>
+</head>
+
+<body>
+	<header>
+    <div class="title">
+    <b>Morten Holst Ovrebo</b>
+    </div>
+  </header>
+      <nav>
+      <div class="menu-container">
+        <div class="aboutLink"><a id="other" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/about.png" />Other</div></a></div>
+        <div class="educationLink"><a id="education" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/education.png" />Education</div></a></div>
+        <div class="projectLink"><a id="projects" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/projects.png" />Projects</div></a></div>
+        <div class="workLink"><a  id="work" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/work.png" />Work</div></a></div>
+      </div>
+    </nav>
+<div id="result" class="infoline">  Press the categories you want to see. Press again to hide.</div>
+  <div id="placeholder">
+     <!-- Articles -->
+  </div>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+        getData();
+  </script>
+
+</body>
+</html>

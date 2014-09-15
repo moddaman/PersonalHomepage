@@ -1,0 +1,218 @@
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0;
+    border: 0; 
+    font-family: "Helvetica Neue", "Myriad", "myriad-pro",  Verdana, sans-serif;
+    background-color: lightblue;
+    /*background-image:url('Images/backgroundFish.png');*/
+
+}
+
+.background-image {
+	width: 10px;
+	height: 2px;
+}
+
+
+h1, h2 {
+    display: inline;
+}
+
+footer {
+	background-color: rgb(44,130,201);
+	width: 100%;
+	text-align: center;
+}
+
+header {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+    justify-content: space-around;
+	height: 80px;
+	margin: 0;
+	background-color: #235D79;
+
+}
+
+aside {
+	min-height: 400px;
+	height: auto;
+    width: 30px;  
+   	display: -webkit-flex;
+	display: flex;
+   	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+    justify-content: center;
+}
+
+details {
+	max-width: 500px;
+	text-align: center;
+}
+
+
+.infoline {
+	margin: 5px;
+	font-size: 15px;
+	text-align: center;
+
+}
+
+
+/* Types */
+
+.work {
+	background-color: #69D2E7;
+
+}
+.education {
+	background-color: #EEF966;
+}
+.other {
+	background-color: #FF9E9D;
+}
+.projects{
+background-color: #F38630;
+	}	
+
+
+
+
+.title {
+	font-size: 2em;
+	color: white;
+	
+}
+
+
+/*
+		TOP	MENU
+ */
+
+.menu-container {
+	padding: 0;
+	margin: 0;
+	background-color: grey;
+	/*background-color: #086FA1;*/
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: stretch;
+   	align-items: center;
+    justify-content: space-around;
+
+}
+
+.menu-container div {
+	height: 40px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+   	align-items: center;
+   	 -webkit-align-items: center;
+   	padding: 0px 15px 0px 7px;
+}
+
+
+.menu-container a {
+	font-size: 1.2em;
+	padding-top: 0px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 0px solid transparent;
+	-webkit-transition: 0.2s all ease;
+	-moz-transition: 0.2s all ease;
+	-ms-transition: 0.2s all ease;
+	-o-transition: 0.2s all ease;
+	transition: 0.2s all ease;
+
+}
+
+
+
+.menu-container div img {
+	width: 40px;
+	padding-right: 5px;
+
+}
+
+
+.workLink a:hover {
+	margin-bottom: 3px;
+	color: #69D2E7 !important;
+	border-bottom: 3px solid ;
+}
+.educationLink a:hover {
+	margin-bottom: 3px;
+	color: #EEF966 !important;
+	border-bottom: 3px solid ;
+}
+
+.projectLink a:hover {
+	margin-bottom: 3px;
+	color: #F38630 !important;
+	border-bottom: 3px solid ;
+}
+
+.aboutLink  a:hover {
+	margin-bottom: 3px;
+	color: #FF9E9D !important;
+	border-bottom: 3px solid ;
+}
+
+
+
+
+/*
+	Article
+*/
+
+.article-div{
+		visibility: hidden;
+		display: block;
+}
+
+article {
+
+	min-height: 400px;
+	height: auto;
+	/*margin: 50px 0px 20px 0px;*/
+	background-color: white;
+	/*padding: 40px 0px 40px 0px;*/
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	align-items: center;
+	border: solid;
+	border-width: 1px 0px 1px 0px;
+
+}
+
+
+.article-image {
+	padding-bottom: 20px;
+}
+
+.article-content {
+	
+    margin: 0 auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+
+
+

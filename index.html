@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>home</title>
+  <meta name="description" content="Personal homepage">
+  <meta name="author" content="Morten Holst Ovrebo">
+  <link rel="stylesheet" href="stylesheet.css?v=1.0">
+  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="Images/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body>
+	<header>
+    <div class="title">
+    <b>Morten Holst Ovrebo</b>
+    </div>
+  </header>
+      <nav>
+      <div class="menu-container">
+        <div class="aboutLink"><a id="other" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/about.png" />Other</div></a></div>
+        <div class="educationLink"><a id="education" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/education.png" />Education</div></a></div>
+        <div class="projectLink"><a id="projects" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/projects.png" />Projects</div></a></div>
+        <div class="workLink"><a  id="work" title="hello" onClick="specifyTypes(this); return false;" href="fallback.html"><div><img src="Images/work.png" />Work</div></a></div>
+      </div>
+    </nav>
+<div id="result" class="infoline">  Press the categories you want to see. Press again to hide.</div>
+  <div id="placeholder">
+     <!-- Articles -->
+  </div>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+        getData();
+  </script>
+
+</body>
+</html>
